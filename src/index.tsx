@@ -5,12 +5,16 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 // @ts-ignore
 import reportWebVitals from './reportWebVitals.ts';
+// @ts-ignore
+import { client, ApolloProvider } from './utils/graphql.ts';
 
 const elem = document.getElementById('root')!; // non-null assertion
 const root = ReactDOM.createRoot(elem);
 root.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+        <App />
+    </ApolloProvider>
   </React.StrictMode>
 );
 
