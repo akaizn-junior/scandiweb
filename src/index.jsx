@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-// @ts-ignore
-import App from './App.tsx';
-// @ts-ignore
-import reportWebVitals from './reportWebVitals.ts';
-// @ts-ignore
-import { client, ApolloProvider } from './utils/graphql.ts';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { client, ApolloProvider } from './utils/graphql';
 
-const elem = document.getElementById('root')!; // non-null assertion
-const root = ReactDOM.createRoot(elem);
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>

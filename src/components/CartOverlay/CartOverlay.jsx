@@ -1,7 +1,7 @@
 import React from 'react';
 import './CartOverlay.css';
 
-class CartOverlay extends React.Component {
+export class CartOverlay extends React.Component {
   render() {
     return (
         <div className="CartOverlay">
@@ -10,5 +10,3 @@ class CartOverlay extends React.Component {
     );
   }
 }
-
-export default CartOverlay;

@@ -1,7 +1,7 @@
 import React from 'react';
 import './PDP.css';
 
-class PDP extends React.Component {
+export class PDP extends React.Component {
   render() {
     return (
         <div className="PDP">
@@ -10,5 +10,3 @@ class PDP extends React.Component {
     );
   }
 }
-
-export default PDP;

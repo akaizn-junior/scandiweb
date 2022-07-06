@@ -1,7 +1,7 @@
 import React from 'react';
 import './Switcher.css';
 
-class Switcher extends React.Component {
+export class Switcher extends React.Component {
   render() {
     return (
         <div className="Switcher">
@@ -10,5 +10,3 @@ class Switcher extends React.Component {
     );
   }
 }
-
-export default Switcher;
